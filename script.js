@@ -409,7 +409,6 @@ function recordGameResult(result) {
   else if (result === 'O') winsO++;
   else draws++;
   
-  // Keep only last 10 games
   if (gameHistory.length > 10) {
     gameHistory.shift();
   }
@@ -473,5 +472,4 @@ function createConfetti() {
   }
 }
 
-// Initial render
 renderBoard();
